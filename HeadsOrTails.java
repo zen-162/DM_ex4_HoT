@@ -20,6 +20,11 @@ class HeadsOrTails {
             }
         }
         System.out.println("Heads: " + contH + ", Tails: " + contT);
+        if (contH > contT) {
+            System.out.println("You won!");
+        } else {
+            System.out.println("You lost!");
+        }
     }
 
 }
