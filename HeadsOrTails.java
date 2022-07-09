@@ -1,11 +1,18 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class HeadsOrTails {
     public static void main(String[] args) {
         Random rd = new Random();
+        Scanner sc = new Scanner(System.in);
         final int n = 3;
         int contH = 0;
         int contT = 0;
+
+        // user_name
+        System.out.println("Who are you?");
+        String name = sc.next();
+        System.out.println("hello, " + name + "!");
 
         System.out.println("Tossing a coin...");
         for (int i = 0; i < n; i++) {
@@ -26,5 +33,4 @@ class HeadsOrTails {
             System.out.println("You lost!");
         }
     }
-
 }
